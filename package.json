@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/locator-kn/ms-utilities#readme",
   "dependencies": {
-    "dotenv": "^1.2.0",
     "hoek": "^3.0.4",
     "mongodb": "^2.1.4",
     "slack-node": "^0.1.7"

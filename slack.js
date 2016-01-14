@@ -9,6 +9,10 @@ fns.sendSlackError = (channel, text) => {
 
     slack.webhook({
         text: JSON.stringify(text)
+    }, (err) => {
+        if (err) {
+            console.log(err);
+        }
     });
 };
 

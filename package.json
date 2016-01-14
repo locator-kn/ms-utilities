@@ -1,7 +1,7 @@
 {
   "name": "ms-utilities",
   "version": "1.0.0",
-  "description": "",
+  "description": "Helper module for microservices used by locator-app.com",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/locator-kn/ms-utilities#readme",
   "dependencies": {
-    "hoek": "^3.0.4"
+    "hoek": "^3.0.4",
+    "mongodb": "^2.1.4"
   }
 }

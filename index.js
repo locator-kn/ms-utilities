@@ -1,12 +1,17 @@
 'use strict';
 
+const path = require('path');
+const pwd = path.join(__dirname, '..', '/.env');
+require('dotenv').config({path: pwd});
+
 const Hoek = require('hoek');
 
 const ObjectID = require('mongodb').ObjectID;
 
 
 const fns = {
-    reporter: require('./reporter')
+    reporter: require('./reporter'),
+    slack: require('./slack')
 };
 
 

@@ -4,7 +4,10 @@ const Hoek = require('hoek');
 
 const ObjectID = require('mongodb').ObjectID;
 
-const fns = {};
+
+const fns = {
+    reporter: require('./reporter')
+};
 
 
 fns.decorateNewDateData = (target) => {

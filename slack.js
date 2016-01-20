@@ -1,12 +1,14 @@
-var Slack = require('slack-node');
+'use strict';
 
+const Slack = require('slack-node');
+
+const slack = new Slack();
 
 const fns = {};
 
 fns.sendSlackError = (channel, text) => {
-    var slack = new Slack();
-    slack.setWebhook(channel);
 
+    slack.setWebhook(channel);
     slack.webhook({
         text: JSON.stringify(text)
     }, (err) => {

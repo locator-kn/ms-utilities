@@ -4,7 +4,8 @@
   "description": "Helper module for microservices used by locator-app.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jshint": "jshint --exclude ./node_modules ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,12 @@
     "hoek": "^3.0.4",
     "mongodb": "^2.1.4",
     "slack-node": "^0.1.7"
-  }
+  },
+  "devDependencies": {
+    "jshint": "^2.9.1",
+    "precommit-hook": "^3.0.0"
+  },
+  "pre-commit": [
+    "jshint"
+  ]
 }

@@ -6,9 +6,9 @@ const ObjectID = require('mongodb').ObjectID;
 
 
 const fns = {
-    reporter: require('./reporter'),
-    slack: require('./slack'),
-    logger: require('./logger'),
+    reporter: require('./lib/reporter'),
+    slack: require('./lib/slack'),
+    logger: require('./lib/logger'),
     ip: require('./lib/ip')
 };
 

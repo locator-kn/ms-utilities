@@ -1,6 +1,6 @@
 {
   "name": "ms-utilities",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "Helper module for microservices used by locator-app.com",
   "main": "index.js",
   "scripts": {

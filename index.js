@@ -7,9 +7,9 @@ const ObjectID = require('mongodb').ObjectID;
 
 const fns = {
     reporter: require('./reporter'),
-    slack: require('./slack')
+    slack: require('./slack'),
+    logger: require('./logger')
 };
-
 
 fns.decorateNewDateData = (target) => {
     let isoDate = new Date().toISOString();

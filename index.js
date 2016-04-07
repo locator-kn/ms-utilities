@@ -1,9 +1,7 @@
 'use strict';
 
 const Hoek = require('hoek');
-
-const ObjectID = require('mongodb').ObjectID;
-
+const ObjectID = require('bson-objectid');
 
 const fns = {
     reporter: require('./lib/reporter'),
@@ -33,7 +31,7 @@ fns.safeObjectId = (objectIdString, idType) => {
     idType = idType || 'id';
 
     return new Promise((resolve) => {
-        resolve(new ObjectID(objectIdString));
+        resolve(ObjectID(objectIdString));
 
     }).catch(() => {
         throw new Error('Invalid ' + idType);

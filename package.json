@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/locator-kn/ms-utilities#readme",
   "dependencies": {
-    "bson-objectid": "^1.1.4",
+    "bson-objectid": "^1.1.5",
     "bunyan": "^1.8.0",
     "bunyan-slack": "0.0.10",
     "hoek": "^3.0.4",
